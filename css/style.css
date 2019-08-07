@@ -19,9 +19,14 @@ section {
     min-height: 700px;
 }
 
+.about {
+    min-height: 500px;
+}
+
 .portofolio {
     padding-top: 30px;
     background-color: #eee;
+    min-height: 400px;
 }
 
 .contact {
