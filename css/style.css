@@ -4,6 +4,7 @@ html {
 
 body {
     margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 .jumbotron img {
@@ -23,7 +24,7 @@ section {
     min-height: 500px;
 }
 
-.portofolio {
+.Portfolio {
     padding-top: 30px;
     background-color: #eee;
     min-height: 400px;
