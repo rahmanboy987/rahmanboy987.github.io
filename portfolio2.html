@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    /* html style */
+    html {
+        position: relative;
+    }
+
+
+    /* body style */
+    body {
+        border-left: 300px solid #cccccc;
+        back
+    }
+
+    /* header style */
+    .header-style {
+        background-color: #f1f1f1;
+        top: 0;
+        padding-top: 50px;
+        left: 0;
+        width: 300px;
+        position: fixed;
+        padding-bottom: 9%;
+    }
+
+    .header-style p {
+        font-size: 15px;
+    }
+
+    .header-style h2 {
+        padding-top: 15px;
+        word-spacing: 0;
+    }
+
+    /* header navibar */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    /* text style */
+    .center {
+        text-align: center;
+    }
+
+    /* img style */
+    .circle-img {
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+
+    .boxed-text img {
+        opacity: 0.5;
+        top: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxed-text h1 {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        right: 0;
+        width: 60%;
+    }
+</style>
+
+<body>
+    <header class="header-style center">
+        <img src="img/profile.jpg" alt="" class="circle-img">
+        <h2 class="center">Moh. Fathur Rohman</h2>
+        <p class="center">Programmer || Student</p>
+
+        <ul>
+            <li><a class="active" href="#home">Moh. Fathur Rohman</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p>&copy; Copyright 2019 <br> Made by <a href="https://github.com/rahmanboy987">Moh. Fathur Rohman</a>
+        </p>
+    </header>
+
+    <div class="boxed-text">
+        <img class="slide" src="img/pic2.jpg" alt="" height="700">
+        <img class="slide" src="img/pic1.jpg" alt="" height="700">
+        <h1>test lur!</h1>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 10000);
+        }
+    </script>
+
+</body>
+
+</html>
