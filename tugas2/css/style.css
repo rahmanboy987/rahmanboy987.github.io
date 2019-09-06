@@ -1,0 +1,26 @@
+body {
+    background-color: aqua;
+}
+
+.profile {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    margin: 250px 550px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.profile img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile h2 {
+    font-size: 20px;
+}
+
+.menu {
+    margin-top: 1000px;
+    background-color: white;
+}
