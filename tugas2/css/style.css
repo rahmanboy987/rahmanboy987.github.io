@@ -1,0 +1,142 @@
+body {
+    background-color: #aaa;
+}
+
+nav {
+    background-color: #333;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.profile {
+    position: relative;
+    background-color: white;
+    margin-top: 200px;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #666;
+    z-index: 1;
+}
+
+.profile img {
+    padding-top: 20px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu {
+    background-color: white;
+    margin-top: -200px;
+    padding-bottom: 100px;
+    padding-top: 250px;
+    border-radius: 10px;
+}
+
+.title h2 {
+    text-align: center;
+}
+
+.title hr {
+    margin-left: 0 50%;
+    width: 250px;
+    border-top: 3px solid #666;
+}
+
+
+.content {
+    color: white;
+    border: 20px;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.content p {
+    margin: 20px;
+}
+
+.box {
+    background-color: #333;
+    height: 250px;
+}
+
+.boxskill {
+    color: white;
+    border: 20px;
+    background-color: #333;
+    height: 250px;
+    padding: 0 40px;
+}
+
+.boxskill h3 {
+    text-align: center;
+}
+
+.boxskill p {
+    font-size: 10px;
+    word-spacing: 0;
+}
+
+.skillbar {
+    margin-top: -17px;
+    background: #0fffb7;
+    width: 100%;
+    height: 2px;
+}
+
+.percentage {
+    text-align: right;
+}
+
+.grid_12 {
+    text-align: center;
+}
+
+.port img {
+    width: 300px;
+}
+
+.project img {
+    width: 400px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+    color: white;
+}
+
+.footer p {
+    margin-top: 0;
+    margin-left: 10%;
+}
