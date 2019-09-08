@@ -1,0 +1,183 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.color {
+    position: absolute;
+    background-color: #999;
+    height: 350px;
+    z-index: -1;
+}
+
+/* nav bar */
+nav {
+    background-color: #333;
+    top: -20px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.container_12 {
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+/* box */
+.boxed {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.top {
+    margin: 75px;
+}
+
+/* profile */
+.profile {
+    background-color: #666;
+    color: white;
+}
+
+.profile img {
+    float: right;
+    width: 350px;
+    display: block;
+}
+
+.profile h2 {
+    padding-left: 70px;
+    padding-top: 50px;
+
+}
+
+.profile h3 {
+    padding-left: 70px;
+    margin-top: -20px;
+}
+
+.profile .desc {
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+.profile p {
+    margin-top: -10px;
+}
+
+.title h2 {
+    word-spacing: 0;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.title hr {
+    margin-left: 0 50%;
+    width: 250px;
+    border-top: 3px solid #666;
+}
+
+.content {
+    color: white;
+    border: 20px;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.content p {
+    margin: 20px;
+}
+
+.box {
+    background-color: white;
+    height: 250px;
+    color: black;
+}
+
+.boxskill {
+    border: 20px;
+    background-color: #666;
+    height: 230px;
+    padding: 0 40px;
+    color: white;
+}
+
+.boxskill p {
+    font-size: 12px;
+    word-spacing: 0;
+}
+
+.skillbar {
+    margin-top: -20px;
+    background: #0fffb7;
+    width: 100%;
+    height: 2px;
+}
+
+.percentage {
+    text-align: right;
+    margin-top: -10px;
+    margin-right: -25px;
+    word-spacing: 0;
+}
+
+.port {
+    background-color: #666;
+    color: white;
+}
+
+.port img {
+    width: 300px;
+}
+
+.project img {
+    width: 400px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footer p {
+    margin-top: 0;
+    margin-left: 10%;
+}
+
+.experience {
+    background-color: #666;
+    color: white;
+}
