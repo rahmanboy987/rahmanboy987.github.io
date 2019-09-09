@@ -1,12 +1,20 @@
+/* page style */
 html {
-    font-family: 'Courier New', Courier, monospace;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #aaa;
+    background-color: #ccc;
 }
 
+.color {
+    position: absolute;
+    background-color: #999;
+    height: 350px;
+    z-index: -1;
+}
+
+/* navbar */
 nav {
     background-color: #333;
     top: -20px;
@@ -36,32 +44,56 @@ li a:hover {
     background-color: #111;
 }
 
-.profile {
-    position: relative;
+/* box style */
+.container_12 {
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+.box_spacing {
+    margin: 150px;
+}
+
+.box_w {
     background-color: white;
-    margin-top: 200px;
-    text-align: center;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #666;
-    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+}
+
+.box_s {
+    background-color: #666;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+}
+
+/* profile style */
+.profile {
+    padding-bottom: 0;
 }
 
 .profile img {
-    padding-top: 20px;
-    width: 250px;
-    display: block;
-    margin: 0 auto;
+    float: right;
+    width: 350px;
 }
 
-.menu {
-    background-color: white;
-    margin-top: -200px;
-    padding-bottom: 80px;
-    padding-top: 180px;
-    border-radius: 10px;
+.p_text {
+    padding-top: 50px;
+    padding-left: 70px;
 }
 
+.profile h3 {
+    margin-top: -20px;
+}
+
+.p_desc {
+    padding-top: 50px;
+}
+
+.profile p {
+    margin-top: -10px;
+}
+
+/* title style */
 .title h2 {
     word-spacing: 0;
     padding-top: 25px;
@@ -74,37 +106,27 @@ li a:hover {
     border-top: 3px solid #666;
 }
 
-.content {
-    color: white;
+/* experience style */
+.box_exp {
     border: 20px;
+    height: 250px;
 }
 
-.content h3 {
+.box_exp h3 {
     text-align: center;
 }
 
-.content p {
+.box_exp p {
     margin: 20px;
 }
 
-.box {
-    background-color: #333;
-    height: 250px;
-}
-
-.boxskill {
-    color: white;
-    border: 20px;
-    background-color: #333;
-    height: 250px;
+/* skill style */
+.box_skill {
+    height: 230px;
     padding: 0 40px;
 }
 
-.boxskill h3 {
-    text-align: center;
-}
-
-.boxskill p {
+.box_skill p {
     font-size: 12px;
     word-spacing: 0;
 }
@@ -123,9 +145,8 @@ li a:hover {
     word-spacing: 0;
 }
 
-.container_12 {}
-
-.grid_12 {
+/* portfolio style */
+.port {
     text-align: center;
 }
 
@@ -133,11 +154,17 @@ li a:hover {
     width: 300px;
 }
 
+/* project style */
+.project {
+    text-align: center;
+}
+
 .project img {
     width: 400px;
 }
 
-.footer {
+/* footer */
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -147,7 +174,7 @@ li a:hover {
     color: white;
 }
 
-.footer p {
+footer p {
     margin-top: 0;
-    margin-left: 10%;
+    margin: 0 10%;
 }
