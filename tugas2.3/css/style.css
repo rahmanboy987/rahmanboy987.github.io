@@ -34,7 +34,7 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -55,15 +55,15 @@ li a:hover {
 }
 
 .box_w {
-    background-color: white;
+    background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: black;
+    color: #000;
 }
 
 .box_s {
     background-color: #666;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: white;
+    color: #fff;
 }
 
 /* profile style */
@@ -91,6 +91,56 @@ li a:hover {
 
 .profile p {
     margin-top: -10px;
+}
+
+.icon {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.icon i {
+    padding-top: 5px;
+    font-size: 25px;
+    width: 35px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icon .fa-facebook {
+    background-color: #fff;
+    color: #1977F3;
+}
+
+.icon .fa-instagram {
+    background-color: #fff;
+    color: #000;
+}
+
+.icon .fa-line {
+    background-color: #fff;
+    color: #00B900;
+}
+
+.icon .fa-linkedin {
+    background-color: #fff;
+    color: #0077B5;
+}
+
+.icon .fa-github {
+    background-color: #000;
+    color: #fff;
+}
+
+.icon i:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.icon .fa-github:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 /* title style */
@@ -171,7 +221,7 @@ footer {
     width: 100%;
     height: 20px;
     background-color: #333;
-    color: white;
+    color: #fff;
 }
 
 footer p {
