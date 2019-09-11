@@ -8,36 +8,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/659604d02a.js"></script>
     <link rel="stylesheet" href="css/960_12_col.css">
-    <link rel="stylesheet" href="css/style.css">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <title>Porto Fathur!</title>
 
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <form action="include.php">
+    <form action="fathur.php" method="post">
         <nav class="color"></nav>
         <div class="box_spacing"></div>
 
         <div class="container_12 box_s profile">
             <img src="img/photo.jpg" alt="">
             <div class="p_text">
-                <h2><input type="text" name="name" placeholder="Your Name"></h2>
-                <h3><input type="text" name="spesialist" placeholder="Your Spesialist"></h3>
+                <p>* must fill</p>
+                <h2><input type="text" name="name" placeholder="*Your Name" required></h2>
+                <h3><input type="text" name="spesialist" placeholder="*Your Spesialist" required></h3>
                 <div class="p_desc">
-                    <p><i class="fas fa-envelope"></i> <input type="text" name="name" placeholder="Email"></p>
-                    <p><i class="fas fa-globe"></i> <input type="text" name="name" placeholder="Your Site"></p>
-                    <p><i class="fab fa-github-square"></i> <input type="text" name="name" placeholder="Your Github">
+                    <p><i class="fas fa-envelope"></i> <input type="text" name="email" placeholder="Email"></p>
+                    <p><i class="fas fa-globe"></i> <input type="text" name="site" placeholder="Your Site"></p>
+                    <p><i class="fab fa-github-square"></i> <input type="githubpage" name="name"
+                            placeholder="Your Github">
                     </p>
-                    <p><i class="fas fa-phone"></i> <input type="text" name="name" placeholder="Phone Number"></p>
-                    <p><i class="fas fa-map-marker-alt"></i> <input type="text" name="name" placeholder="Your Address">
+                    <p><i class="fas fa-phone"></i> <input type="text" name="phone" placeholder="Phone Number"></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <input type="address" name="name"
+                            placeholder="Your Address">
                     </p>
                     <p>Do you want to add your <b>social media</b>? <br>
                         <div class="center">
-                            <input type="radio" name="sosmed" value="yes"> Yes
-                            <input type="radio" name="sosmed" value="no"> No
+                            <input type="radio" name="sosmed" value="yes" onclick="yes1();"> Yes
+                            <input type="radio" name="sosmed" value="no" onclick="no1();" checked> No
+                        </div><br>
+                        <div class="attribute" id="attribute1" style="margin-left: 20%;">
+                            <i class="fab fa-facebook"></i> <input type="text" name="fb" placeholder="Your facebook">
+                            <br>
+                            <i class="fab fa-instagram"></i> <input type="text" name="ig" placeholder="Your instagram">
+                            <br>
+                            <i class="fab fa-line"></i> <input type="text" name="line" placeholder="Your line"> <br>
+                            <i class="fab fa-linkedin"></i> <input type="text" name="linkedin"
+                                placeholder="Your linkedin"> <br>
+                            <i class="fab fa-github"></i> <input type="text" name="github" placeholder="Your github">
+                            <br>
                         </div>
                     </p>
                 </div>
@@ -49,8 +64,11 @@
                 <h2>Do you want to adding description about your self?</h2>
                 <hr>
                 <div class="center">
-                    <input type="radio" name="about" value="yes"> Yes
-                    <input type="radio" name="about" value="no"> No
+                    <input type="radio" name="about" value="yes" onclick="yes2();"> Yes
+                    <input type="radio" name="about" value="no" onclick="no2();" checked> No
+                </div><br>
+                <div class="attribute center" id="attribute2">
+                    <textarea name="about_desc" id="" cols="30" rows="10"></textarea>
                 </div>
             </div>
         </div>
@@ -60,8 +78,11 @@
                 <h2>Do you want to adding your Experience?</h2>
                 <hr>
                 <div class="center">
-                    <input type="radio" name="experience" value="yes"> Yes
-                    <input type="radio" name="experience" value="no"> No
+                    <input type="radio" name="experience" value="yes" onclick="yes3();"> Yes
+                    <input type="radio" name="experience" value="no" onclick="no3();" checked> No
+                </div>
+                <div class="attribute center" id="attribute3">
+                    <textarea name="experience_desc" id="" cols="30" rows="10"></textarea>
                 </div>
             </div>
         </div>
@@ -71,8 +92,11 @@
                 <h2>Do you want to adding your Skills?</h2>
                 <hr>
                 <div class="center">
-                    <input type="radio" name="skill" value="yes"> Yes
-                    <input type="radio" name="skill" value="no"> No
+                    <input type="radio" name="skill" value="yes" onclick="yes4();"> Yes
+                    <input type="radio" name="skill" value="no" onclick="no4();" checked> No
+                </div>
+                <div class="attribute center" id="attribute4">
+                    <textarea name="skill_desc" id="" cols="30" rows="10"></textarea>
                 </div>
             </div>
         </div>
@@ -82,8 +106,11 @@
                 <h2>Do you want to adding your Website?</h2>
                 <hr>
                 <div class="center">
-                    <input type="radio" name="port" value="yes"> Yes
-                    <input type="radio" name="port" value="no"> No
+                    <input type="radio" name="port" value="yes" onclick="yes5();"> Yes
+                    <input type="radio" name="port" value="no" onclick="no5();" checked> No
+                </div>
+                <div class="attribute center" id="attribute5">
+                    <textarea name="port_desc" id="" cols="30" rows="10"></textarea>
                 </div>
             </div>
         </div>
@@ -93,15 +120,18 @@
                 <h2>Do you want to adding your Project?</h2>
                 <hr>
                 <div class="center">
-                    <input type="radio" name="project" value="yes"> Yes
-                    <input type="radio" name="project" value="no"> No
+                    <input type="radio" name="project" value="yes" onclick="yes6();"> Yes
+                    <input type="radio" name="project" value="no" onclick="no6();" checked> No
+                </div>
+                <div class="attribute center" id="attribute6">
+                    <textarea name="project_desc" id="" cols="30" rows="10"></textarea>
                 </div>
             </div>
         </div>
 
         <div class="container_12 box_s">
             <div class="center">
-                <input type="submit" value="Submit">
+                <input type="submit">
             </div>
         </div>
     </form>
@@ -110,6 +140,7 @@
         <p>&copy; Copyright 2019 | Made With <i class=" fas fa-heart"></i> by Moh. Fathur Rohman</a>
         </p>
     </footer>
+
 
 </body>
 

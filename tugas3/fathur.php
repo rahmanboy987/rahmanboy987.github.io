@@ -32,7 +32,7 @@
     <div class="container_12 box_s profile">
         <img src="img/photo.jpg" alt="">
         <div class="p_text">
-            <h2>Moh. Fathur Rohman</h2>
+            <h2><?php echo $_POST["name"]; ?></h2>
             <h3>Programmer || Web Dev</h3>
             <div class="p_desc">
                 <p><i class="fas fa-envelope"></i> rahmanboy987@gmail.com</p>
