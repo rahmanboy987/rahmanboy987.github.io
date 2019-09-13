@@ -8,11 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/659604d02a.js"></script>
     <link rel="stylesheet" href="css/960_12_col.css">
-
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <title>Porto Fathur!</title>
-
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
@@ -20,14 +18,13 @@
 <body>
     <nav class="color"></nav>
     <div class="box_spacing"></div>
-
     <div class="container_12 box_s profile">
         <img src="img/photo.jpg" alt="">
         <div class="p_text">
             <p>check the checkbox!</p>
             <p>No checkbox mean it's must fill!</p>
-            <h2><input type="text" name="name" placeholder="Your Name"></h2>
-            <h3><input type="text" name="special" placeholder="Your Specialist"></h3>
+            <h2><input type="text" name="name" placeholder="Your Name" required></h2>
+            <h3><input type="text" name="special" placeholder="Your Specialist" required></h3>
             <div class="p_desc">
                 <p><i class="fas fa-envelope"></i> <input type="text" name="email" placeholder="Your Email"><input
                         type="checkbox" name="profile1" value="1"> Checkbox</p>
@@ -71,7 +68,6 @@
             </div>
         </div>
     </div>
-
     <div class="container_12 box_w">
         <div class="grid_12 title" id="about">
             <h2>Do you want to adding description about your self?</h2>
@@ -87,16 +83,15 @@
             <p class="center">do not fill the box if you choose "no"!</p>
         </div>
     </div>
-
     <div class="container_12 box_s">
         <div class="grid_12 title" id="experience">
             <h2>Do you want to adding your Experience?</h2>
             <hr>
             <div class="center">
-                <input type="radio" name="experience" value="yes"> Yes
-                <input type="radio" name="experience" value="no" checked> No
+                <input type="radio" name="experience" value="yes" onclick="yes3();"> Yes
+                <input type="radio" name="experience" value="no" onclick="no3();" checked> No
             </div>
-            <div class="center">
+            <div class="attribute center" id="exp_p">
                 <h3>How much box experience do you need?</h3>
                 <input type="radio" name="box_exp" value="1" onclick="box_exp1();"> One
                 <input type="radio" name="box_exp" value="2" onclick="box_exp2();"> Two
@@ -120,16 +115,15 @@
         </div>
         <p class="center">do not fill the box if you choose "no"!</p>
     </div>
-
     <div class="container_12 box_w">
         <div class="grid_12 title" id="skill">
             <h2>Do you want to adding your Skills?</h2>
             <hr>
             <div class="center">
-                <input type="radio" name="skill" value="yes"> Yes
-                <input type="radio" name="skill" value="no" checked> No
+                <input type="radio" name="skill" value="yes" onclick="yes4();"> Yes
+                <input type="radio" name="skill" value="no" onclick="no4();" checked> No
             </div>
-            <div class="center" id="attribute4">
+            <div class="attribute center" id="skill_p">
                 <div class="center">
                     <h3>How much box experience do you need?</h3>
                     <input type="radio" name="box_skill" value="1" onclick="box_skill1();"> One
@@ -139,53 +133,64 @@
                 <div class="grid_3 box_s box_skill center attribute" id="text_skill1">
                     <br>
                     <input type="text" name="title_skill1" placeholder="Name"><br><br><br>
-                    <input type="text" name="name_skill11" placeholder="title">
-                    <input type="text" name="percentage_skill11" placeholder="%" style="width: 35px"><br><br>
-                    <input type="text" name="name_skill12" placeholder="title">
-                    <input type="text" name="percentage_skill12" placeholder="%" style="width: 35px"><br><br>
-                    <input type="text" name="name_skill13" placeholder="title">
-                    <input type="text" name="percentage_skill13" placeholder="%" style="width: 35px"><br><br>
-                    <input type="text" name="name_skill14" placeholder="title">
-                    <input type="text" name="percentage_skill14" placeholder="%" style="width: 35px"><br><br>
+                    <input type="text" name="name_skill11" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill11" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill11" value="1"><br><br>
+                    <input type="text" name="name_skill12" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill12" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill12" value="1"><br><br>
+                    <input type="text" name="name_skill13" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill13" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill13" value="1"><br><br>
+                    <input type="text" name="name_skill14" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill14" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill14" value="1"><br><br>
                     <br>
                 </div>
                 <div class="grid_3 box_s box_skill center attribute" id="text_skill2">
                     <br>
                     <input type="text" name="title_skill2" placeholder="Name"><br><br><br>
-                    <input type="text" name="name_skill21" placeholder="title">
-                    <input type="text" name="percentage_skill21" placeholder="%" style="width: 35px"><br><br>
-                    <input type="text" name="name_skill22" placeholder="title">
-                    <input type="text" name="percentage_skill22" placeholder="%" style="width: 35px"><br><br>
-                    <input type="text" name="name_skill23" placeholder="title">
-                    <input type="text" name="percentage_skill23" placeholder="%" style="width: 35px"><br><br>
-                    <input type="text" name="name_skill24" placeholder="title">
-                    <input type="text" name="percentage_skill24" placeholder="%" style="width: 35px"><br><br>
+                    <input type="text" name="name_skill21" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill21" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill21" value="1"><br><br>
+                    <input type="text" name="name_skill22" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill22" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill22" value="1"><br><br>
+                    <input type="text" name="name_skill23" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill23" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill23" value="1"><br><br>
+                    <input type="text" name="name_skill24" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill24" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill24" value="1"><br><br>
                     <br>
                 </div>
                 <div class="grid_3 box_s box_skill center attribute" id="text_skill3">
                     <br>
                     <input type="text" name="title_skill3" placeholder="Name"><br><br><br>
-                    <input type="text" name="name_skill31" placeholder="title">
-                    <input type="text" name="percentage_skill31" placeholder="%" style="width: 35px"><br><br>
-                    <input type="text" name="name_skill32" placeholder="title">
-                    <input type="text" name="percentage_skill32" placeholder="%" style="width: 35px"><br><br>
-                    <input type="text" name="name_skill33" placeholder="title">
-                    <input type="text" name="percentage_skill33" placeholder="%" style="width: 35px"><br><br>
-                    <input type="text" name="name_skill34" placeholder="title">
-                    <input type="text" name="percentage_skill34" placeholder="%" style="width: 35px"><br><br>
+                    <input type="text" name="name_skill31" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill31" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill31" value="1"><br><br>
+                    <input type="text" name="name_skill32" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill32" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill32" value="1"><br><br>
+                    <input type="text" name="name_skill33" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill33" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill33" value="1"><br><br>
+                    <input type="text" name="name_skill34" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill34" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill34" value="1"><br><br>
                 </div>
             </div>
         </div>
-        <br><br><br><br><br><br>
-        <p class="center">do not fill the box if you choose "no"!</p>
-    </div>
-
-    <div class="container_12 box_s">
-        <div class="center">
-            <a href="oops.html"><button type="button">Click Me!</button></a>
+        <div class="grid_12">
+            <p class="center">do not fill the box if you choose "no"!</p>
         </div>
     </div>
-
+    <div class="container_12 box_s">
+        <div class="center">
+            <a href="oops.html"><button type="button">submit</button></a>
+        </div>
+    </div>
     <footer>
         <p>&copy; Copyright 2019 | Made With <i class="fas fa-heart"></i> by Moh. Fathur Rohman</a>
         </p>
