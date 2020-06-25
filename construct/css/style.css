@@ -1,0 +1,136 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to right, blue, cyan);
+}
+
+.header {
+    margin: 20px 0;
+}
+
+.header_1 a {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.header_2 {
+    margin: auto 0;
+}
+
+.header_2 a {
+    color: white;
+    margin: 0 20px;
+}
+
+.header_2 a:active {
+    color: black;
+}
+
+.home {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.home .img_profile {
+    margin: 20px;
+    height: 420px;
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text_img1 {
+    padding-top: 320px;
+    font-size: 20px;
+}
+
+.home_1 {
+    margin: 30px;
+    text-align: center;
+}
+
+.home_1 .b1 {
+    font-size: 30px;
+}
+
+.home_1 .b2 {
+    font-size: 20px;
+}
+
+.home_left {
+    margin: 0 20px;
+}
+
+.home_left .percentage {
+    text-align: right;
+    margin-top: -25px;
+}
+
+.home_left .percentage_bar {
+    background-image: linear-gradient(to right, blue, cyan);
+    height: 5px;
+    margin: 10px 0;
+}
+
+.home_right p {
+    font-size: 14px;
+}
+
+.icon {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.icon i {
+    padding-top: 5px;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    color: #999;
+}
+
+.icon .fa-facebook:hover {
+    background-color: #fff;
+    color: #1977F3;
+}
+
+.icon .fa-instagram:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.icon .fa-line:hover {
+    background-color: #fff;
+    color: #00B900;
+}
+
+.icon .fa-linkedin:hover {
+    background-color: #fff;
+    color: #0077B5;
+}
+
+.icon .fa-github:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.2);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 20px 50px;
+    color: white
+}
+
+.footer a {
+    color: white;
+}
